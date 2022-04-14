@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    border: 1px solid black;
+}
+
+p {
+    display: block;
+    text-shadow: 2px 2px black;
+    color: white;
+    align-self: center;
+    font-size: 3em;
+}
+
+.numbers-box {
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 50%;
+    height: 33.33%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 0.5px solid black;
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.purple {
+    background-color: purple;
+}
+
+@media screen and (min-width: 600px) {
+    .box {
+        width: 33.33%;
+        height: 50%;
+    }
+}
